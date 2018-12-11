@@ -1,13 +1,75 @@
-body{
-    margin:0;
+body {
+    margin: 0;
 }
-    
+
 /*----------------------------------------------------------------------------------*/
 /*  Header
 /*-----------------------------------------------------------------------------------*/
+@media (min-width:700px) {
+    #header {
+        background: url("https://i.imgur.com/HUHpN4I.jpg") repeat scroll center center / cover;
+    }
+    .header-content h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #fff;
+    }
 
-#header {
-    background: url("https://i.imgur.com/IUZYHug.jpg") repeat scroll center center / cover;
+    .header-content p {
+        font-size: 14px;
+        letter-spacing: 5px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2.5vh;
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: 500;
+    }
+    .scroll-right-button i {
+        padding: 10px;
+        font-size: 52px;
+        color: white;
+        position: absolute;
+        right: 1%;
+        top: 49vh;
+        z-index: 1;
+        transition-duration: 1.3s;
+    }
+}
+@media (max-width:700px) {
+    #header {
+        background: url("https://i.imgur.com/BcjAW0S.jpg?2") repeat scroll center center / cover;
+    }
+    .header-content h1 {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .header-content p {
+        font-size: 8.92px;
+        letter-spacing: 3px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2.5vh;
+        text-transform: capitalize;
+        color: #fff;
+        font-weight: 500;
+    }
+    .scroll-right-button i {
+        padding: 10px;
+        font-size: 24px;
+        color: white;
+        position: absolute;
+        right: 1%;
+        top: 49vh;
+        z-index: 1;
+        transition-duration: 1.3s;
+    }
 }
 
 .home {
@@ -39,27 +101,8 @@ body{
     top: 38vh;
 }
 
-.header-content h1 {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: #fff;
-}
-
 .typed {
     margin-left: 2.5vh;
-}
-
-.header-content p {
-    font-size: 13px;
-    letter-spacing: 5px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 2.5vh;
-    text-transform: capitalize;
-    color: #fff;
-    font-weight: 500;
 }
 
 .header-content ul {
@@ -70,6 +113,7 @@ body{
 
 .header-content .list-social li {
     float: left;
+    margin-top: 10px;
     margin-right: 20px;
     list-style: none;
 }
@@ -79,18 +123,7 @@ body{
     font-size: 25px;
 }
 
-.scroll-right-button i {
-    padding: 10gpx;
-    font-size: 25px;
-    color: white;
-    position: relative;
-    width: 97%;
-    text-align: right;
-    top: 50vh;
-    z-index: 1;
-    transition-duration: 1.3s;
 
-}
 .scroll-right-button i:hover {
     transform: translateX(6px);
     transition-duration: 1.3s;

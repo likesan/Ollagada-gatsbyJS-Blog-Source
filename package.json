@@ -6,6 +6,7 @@
   "dependencies": {
     "@debiki/gatsby-plugin-talkyard": "^0.5.7",
     "gatsby": "^2.0.0",
+    "gatsby-plugin-google-analytics": "^2.0.6",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
@@ -15,8 +16,8 @@
     "gatsby-transformer-sharp": "^2.1.1",
     "instafeed.js": "^1.4.1",
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
     "react-instafeed": "^0.4.0",
     "react-lines-ellipsis": "^0.13.2",

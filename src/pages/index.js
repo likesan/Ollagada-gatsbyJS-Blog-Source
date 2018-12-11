@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/Animista.css';
 import '../css/index.css';
+import '../css/font.css';
 import {Link} from 'gatsby';
 import TypedReact from '../lib/typed';
 import Spinner from 'react-spinkit';
@@ -29,7 +30,7 @@ class IndexPage extends React.Component
                 position: 'relative',
                 top: '45vh'
             }}>
-                <Spinner name='cube-grid' style={{}}/>
+                <Spinner name="rotating-plane"/>
             </div>
         );
 
@@ -45,15 +46,13 @@ class IndexPage extends React.Component
                             <div className="typed">
                                 <h1>
                                     <TypedReact
-                                        strings={[
-                                        "I'm a Developer.",
-                                        "I'm a Traveler.",
-                                        "I'm SeungJin YOUN."
-                                    ]}/>
+                                        strings={["Ollagada is 'Move up'.","Communication is key.","My aim is to be free.", "I'm a Blogger.", "I'm SeungJin YOUN."]}/>
                                 </h1>
-
                             </div>
-                            <p>Developer, Traveler, Blogger</p>
+                            <p
+                                style={{
+                                fontFamily: "Noto Serif"
+                            }}>Healthiness, Blogger, Growth Mindset</p>
 
                             <ul className="list-unstyled list-social">
                                 <li>
@@ -66,10 +65,16 @@ class IndexPage extends React.Component
                                         <i className="fab fa-github"></i>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/seungjin-youn-609a06152/">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+
                             </ul>
                         </div>
                         <span className="scroll-right-button">
-                            <Link to="/portfolio" replace>
+                            <Link to="/blog" replace>
                                 <i className="fas fa-angle-right"></i>
                             </Link>
                         </span>
@@ -77,6 +82,7 @@ class IndexPage extends React.Component
                     </div>
                 </div>
             </div>
+
         );
     }
 
@@ -86,7 +92,7 @@ class IndexPage extends React.Component
                 {this.state.loading === false
                     ? this.loadingScreen()
                     : this.homeContents()}
-            </div>
+            </div >
         );
     }
 };

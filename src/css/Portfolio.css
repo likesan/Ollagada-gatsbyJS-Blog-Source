@@ -21,11 +21,14 @@
 }
 
 
+
 .show-case {
     display: grid;
+    grid-gap: 7vh;
+    padding: 3vh 5%;
+
 }
 
 .show-case .card {
-    margin: 30px 5px;
     flex: auto;
 }

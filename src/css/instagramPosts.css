@@ -1,10 +1,24 @@
 /* responsive */
+
+#instafeed {
+    margin-top:3vh;
+    margin: auto;
+}
+#instafeed a {
+    min-height: 250px;
+    max-height: 250px;
+}
+
 @media (max-width:800px) {
     #instafeed {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: repeat(1,1fr);
+    }
 
+    #instafeed a {
+        overflow: hidden;
+        margin: auto;
     }
 }
 @media(min-width:800px) and (max-width:1200px) {
@@ -13,6 +27,11 @@
         grid-gap: 10px;
         grid-template-columns: repeat(2,1fr);
     }
+
+    #instafeed a {
+        overflow: hidden;
+        margin: auto;
+    }
 }
 @media (min-width: 1200px) {
     #instafeed {
@@ -20,18 +39,24 @@
         grid-gap: 10px;
         grid-template-columns: repeat(3,1fr);
     }
-}
-#instafeed{
-    overflow: hidden;
-}
 
-#instafeed a {
+    #instafeed a {
+        overflow: hidden;
+        margin: auto;
+    }
+}
+#instafeed {
+    margin:6%;
     overflow: hidden;
-    height: 30vh;
-    margin:auto;
+}
+#instafeed div:first-child{
+    display:none;
 }
 
 #instafeed img {
+    max-width: 100%;
+    min-height: 100%;
+
     margin-bottom: 0;
     transition-duration: 0.3s;
     vertical-align: middle;

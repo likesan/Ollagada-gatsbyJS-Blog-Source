@@ -25,6 +25,8 @@ class Navi extends Component {
                     <Navigation className="">
                         <Link to="/blog" className="link-hover-effect" replace>Blog</Link>
                         <Link className="link-hover-effect" to="/portfolio" replace>Portfolio</Link>
+                        <Link className="link-hover-effect" to="/instagram" replace>Instagram</Link>
+
                     </Navigation>
                  </Header>
             </div>

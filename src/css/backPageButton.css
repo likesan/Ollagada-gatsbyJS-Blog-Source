@@ -1,0 +1,36 @@
+@media (max-width:700px) {
+
+    .backPageButton > * 
+    {
+        font-size: 25px;
+        opacity: 0.9;
+
+    }
+
+}
+@media (min-width:700px){
+
+    .backPageButton > * 
+    {
+        font-size: 52px;
+        opacity: 0.9;
+    }
+}
+
+
+.backPageButton {
+
+    position: fixed;
+    top: 0;
+    left: 1vh;
+    transition-duration: 0.2s;
+}
+.backPageButton:hover {
+    left: 0;
+    transition-duration: 0.2s;
+}
+
+.backPageButton i {
+    color: #353534;
+    margin: 15px;
+}

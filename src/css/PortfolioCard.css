@@ -38,10 +38,11 @@
 }
 
 .logo img{
-    max-height:30vh;
-    width:auto;
-    height:auto;
+    max-height: 25vh;
+    max-width: 40vh;
+    width: auto;
+    height: auto;
     box-shadow:0px 8px 38px grey;
     position: relative;
-    top:-25px;
+    top:-15px;
 }

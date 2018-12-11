@@ -9,11 +9,11 @@ const instafeedTarget = 'instafeed';
   return (
     <div id='instafeed'>
       <Instafeed
-        limit='15'
-        ref='instafeed'
+        limit='100'
+        // ref='instafeed'
         resolution='standard_resolution'
         sortBy='most-recent'
-        target='instafeed'
+        // target='instafeed'
         template='<a href="{{link}}" target=_blank><img src="{{image}}"/></a>'
         userId='2320194257'
         clientId='dee8a826e8d94feb94c2ea6b72581598'

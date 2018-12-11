@@ -13,6 +13,10 @@ class Footer extends React.Component {
                     <a href="https://github.com/ollagada">
                         <i className="fab fa-github"></i>
                     </a>
+                        <a href="https://www.linkedin.com/in/seungjin-youn-609a06152/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
                 </div>
 
             </div>

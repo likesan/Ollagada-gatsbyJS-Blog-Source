@@ -24,7 +24,12 @@ export default class HTML extends React.Component {
                     <link
                         rel="stylesheet"
                         href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"/>
-
+                    <script
+                        src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.js"></script>
+                    <script>
+                        talkyardServerUrl = 'https://ollagada.talkyard.net';
+                    </script>
+                    <script async defer src="https://cdn.talkyard.net/-/talkyard-comments.min.js"></script>
                 </head>
                 <body {...this.props.bodyAttributes}>
                     {this.props.preBodyComponents}
@@ -36,15 +41,10 @@ export default class HTML extends React.Component {
                     }}/> {this.props.postBodyComponents}
                 </body>
             </html>
-        )
-    }
-}
-
-HTML.propTypes = {
-    htmlAttributes: PropTypes.object,
-    headComponents: PropTypes.array,
-    bodyAttributes: PropTypes.object,
-    preBodyComponents: PropTypes.array,
-    body: PropTypes.string,
-    postBodyComponents: PropTypes.array
+            ) } } HTML.propTypes = {htmlAttributes : PropTypes.object,
+            headComponents : PropTypes.array,
+            bodyAttributes : PropTypes.object,
+            preBodyComponents : PropTypes.array,
+            body : PropTypes.string,
+            postBodyComponents : PropTypes.array
 }

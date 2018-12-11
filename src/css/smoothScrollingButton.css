@@ -1,0 +1,26 @@
+.smoothScrollingButton > * 
+
+{ 
+    font-size:52px;
+    width: 52px;
+    height: 52px;
+    opacity: 0.9;
+    
+}
+
+.smoothScrollingButton {
+    position: absolute;
+    bottom: 1vh;
+    right: 2vh;
+    transition-duration: 0.2s;
+}
+
+.smoothScrollingButton:hover{
+    bottom:0vh;
+    transition-duration: 0.2s;
+}
+
+.smoothScrollingButton i{
+    color:#353534;
+    margin:15px;
+}

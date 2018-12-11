@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Typed from 'typed.js';
+import '../css/font.css';
 
 class TypedReact extends Component {
     componentDidMount() {
@@ -15,7 +16,7 @@ class TypedReact extends Component {
         smartBackspace: true,
         loop: true,
         loopCount: Infinity,
-
+        fontFamily: 'Roboto'
       };
       // this.el refers to the <span> in the render() method
       this.typed = new Typed(this.el, options);

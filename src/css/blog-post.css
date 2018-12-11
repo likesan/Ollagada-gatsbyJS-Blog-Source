@@ -1,18 +1,166 @@
-html{
-    margin:0;
-    padding:0;
+@import url( 'https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Sans+KR|Noto+Serif|Poor+Story');
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
 }
 
-a{
-    color:black;
+a {
+    color: black;
+}
+@media (min-width:800px) and (max-width:3500px) {
+    .blog-wrapper {
+        padding: 15px;
+        width: 70%;
+        margin: auto;
+    }
+    
+.post-wrapper img {
+    -webkit-box-shadow:0 8px 38px rgba(133, 133, 133, 0.5),0 5px 12px rgba(133, 133, 133, 0.22);
+    -moz-box-shadow:0 8px 38px rgba(133, 133, 133, 0.5),0 5px 12px rgba(133, 133, 133, 0.22);
+    box-shadow:0 8px 38px rgba(133, 133, 133, 0.5),0 5px 12px rgba(133, 133, 133, 0.22);
+}
+}
+@media (max-width:1024px) {
+    .blog-wrapper {
+        padding: 15px;
+        width: 95%;
+        margin: auto;
+    }
+    .scroll-down-button {
+        display: hidden;
+        color: white;
+    }
+    .post-wrapper img {
+        -webkit-box-shadow:0px 4px 17px rgba(133, 133, 133, 0.5),0 5px 12px rgba(133, 133, 133, 0.22);
+        -moz-box-shadow:0px 4px 17px rgba(133, 133, 133, 0.5),0 5px 12px rgba(133, 133, 133, 0.22);
+        box-shadow:0px 4px 17px rgba(133, 133, 133, 0.5),0 5px 12px rgba(133, 133, 133, 0.22);
+    }
+}
+@media (min-width:1024px) {
+
+  
+    .post-title {
+        height: 100vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .scroll-down-button {
+        position: absolute;
+        font-size: 6vh;
+        bottom: 0;
+        right: 50%;
+    }
+    .scroll-down-button:hover {
+        cursor: pointer;
+    }
+
+    .scroll-down-button * {
+        color: white;
+        text-shadow: 1px 1px 1px grey;
+        /* Safari */
+        -webkit-transform: rotate(90deg);
+
+        /* Firefox */
+        -moz-transform: rotate(90deg);
+
+        /* IE */
+        -ms-transform: rotate(90deg);
+
+        /* Opera */
+        -o-transform: rotate(90deg);
+
+    }
+
+    .post-title-text {
+        position: absolute;
+        background-color: #282828;
+        top: 40%;
+        left: 15%;
+        width: 70%;
+        padding: 15px;
+        opacity: 0.9;
+    }
+    .post-title h1 {
+        color: white;
+        font-family: 'Nanum Myeongjo';
+        font-size: 10vh;
+        z-index: 11;
+        width: 100%;
+    }
+
+    .post-title p {
+        margin: 0;
+        font-size: 14.15px;
+        text-align: center;
+        font-family: 'Nanum Myeongjo';
+        z-index: 11;
+        color: white;
+        width: 100%;
+    }
+
+
 }
 
-.blog-wrapper{
-    padding:70px;
+.scroll-down-button {
+    background: none;
+    border: none;
+}
+.post-title {
+    text-align: center;
+    overflow: hidden;
 }
 
-.blog-post-body{
-    margin:50px;
+.post-title img {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.post-title h1 {
+    font-family: 'Nanum Myeongjo';
+    font-size: 6vh;
+    z-index: 11;
+    width: 100%;
+}
+.post-title p {
+    text-align: center;
+    font-family: 'Nanum Myeongjo';
+    z-index: 11;
 }
 
+.blog-post-body h1 {
+    font-family: 'Nanum Myeongjo';
+    font-size: 4.5vh;
+}
 
+.blog-post-body h2 {
+    font-family: 'Nanum Myeongjo';
+    font-size: 4vh;
+}
+
+.blog-post-body h3 {
+    font-family: 'Nanum Myeongjo';
+    font-size: 3.5vh;
+}
+
+.blog-post-body {
+    margin: 35px;
+    line-height: 22pt;
+    letter-spacing: 0.8px;
+}
+
+.blog-post-body img {
+    width: 100%;
+}
+
+.blog-post-body ol {
+    padding-left: 3vh;
+}

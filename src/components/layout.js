@@ -9,22 +9,27 @@ import './layout.css'
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+    query SiteTitleQuery {
+      site {
+        buildTime
+        siteMetadata {
+          title
+          siteUrl
+          
         }
       }
+    }
     `}
     render={data => (
       <>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Personal Blog & Portfolio for SJ' },
+            { name: 'keywords', content: '책,리뷰,개발자,여행,자유,노마드,sj,wholesomenomad,건강,웰빙,비건,채식,영어,언어,소통,개발자,자바,java' },
+            { name : 'author', content: 'SeungJin YOUN  '}
           ]}
+          
         >
           <html lang="en" />
     

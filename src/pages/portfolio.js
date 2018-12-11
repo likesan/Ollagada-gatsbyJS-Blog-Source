@@ -31,7 +31,7 @@ class Portfolio extends Component{
                         animista: "card scale-in-center ",
                         title: "Grouping Social Platform MEETNOW",
                         explanation: "Java MVC Pattern Web Application",
-                        detail: ""
+                        detail: "https://youtu.be/MHJmsCvfwEE"
 
                     }, {
                         id: 2,
@@ -39,7 +39,7 @@ class Portfolio extends Component{
                         animista: "card scale-in-center ",
                         title: "Style Share Social Platform ITSO",
                         explanation: "Java Spring Framework Web Application",
-                        detail: ""
+                        detail: "https://www.youtube.com/watch?v=DISVdiGOVwE&feature=youtu.be"
                     }
                 ]
             });
@@ -66,7 +66,12 @@ class Portfolio extends Component{
         return (
             <div>
                 {this.state.portfolios.length === 0
-                    ? <div className="loading" style={{textAlign:'center',width:'1%',margin:'auto',position:'relative',top:'45vh'}}>
+                    ? <div className="loading"  style={{
+                        textAlign: 'center',
+                        width: '1%',
+                        margin: 'auto',
+                        position: 'relative',
+                        top: '45vh'}}>
                             <Spinner name='wandering-cubes'/></div>
                     : <div>
                         <Navi/>

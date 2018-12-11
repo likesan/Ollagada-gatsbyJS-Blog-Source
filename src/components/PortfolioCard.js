@@ -32,7 +32,7 @@ class PortfolioCard extends Component {
                             videocam
                         </i>
                     </a>
-                    <button className="mdl-button mdl-button--icon mdl-color-text--blue-grey-300">
+                    {/* <button className="mdl-button mdl-button--icon mdl-color-text--blue-grey-300">
                         <i className="material-icons">favorite</i>
                     </button>
                     <button
@@ -44,7 +44,7 @@ class PortfolioCard extends Component {
                         <li className="mdl-menu__item">Facebook</li>
                         <li className="mdl-menu__item">Twitter</li>
                         <li className="mdl-menu__item">Pinterest</li>
-                    </ul>
+                    </ul> */}
                 </div>
             </div>
         );
