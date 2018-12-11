@@ -1,0 +1,104 @@
+@import url( 'https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Noto+Sans+KR|Poor+Story');
+
+/* responsive */
+@media (max-width:800px) {
+    .experiences {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1,1fr);
+        height: calc(70vh - 10px);
+    }
+
+    .experiences a {
+        max-width: 450px;
+    }
+
+}
+@media(min-width:800px) and (max-width:1200px) {
+    .experiences {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+        height: calc(70vh - 10px);
+
+    }
+
+}
+@media (min-width: 1200px) {
+    .experiences {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+        height: calc(30vh - 10px);
+    }
+}
+
+.experiences a{
+    margin: auto;
+}
+#blog-wrapper h1 {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+#instagram-posts,
+#wrapper {
+    margin: 80px;
+
+}
+
+.post-wrapper {
+    background-size: cover;
+    background-color: black;
+    height: 500px;
+    overflow: hidden;
+}
+
+#wrapper div a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.post-contents {
+    background-color: black;
+    opacity: 0;
+    padding: 20px 0;
+    transition-duration: 1s;
+}
+.post-wrapper:hover .post-contents {
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.post-header {
+    top: 20%;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.post-body {
+    text-align: center;
+    top: 30%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.post-date,
+.post-tags {
+    text-align: center;
+}
+.post-date {
+    margin: 0;
+}
+
+.img-pic {
+    width: 100%;
+    max-height: 100%;
+    transition-duration: 0.3s;
+}
+.img-pic:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 0.3s;
+}

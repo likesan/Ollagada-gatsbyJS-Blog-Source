@@ -1,0 +1,43 @@
+/* responsive */
+@media (max-width:800px) {
+    #instafeed {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+}
+@media(min-width:800px) and (max-width:1200px) {
+    #instafeed {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width: 1200px) {
+    #instafeed {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+#instafeed{
+    overflow: hidden;
+}
+
+#instafeed a {
+    overflow: hidden;
+    height: 30vh;
+    margin:auto;
+}
+
+#instafeed img {
+    margin-bottom: 0;
+    transition-duration: 0.3s;
+    vertical-align: middle;
+}
+#instafeed img:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 0.3s;
+
+}

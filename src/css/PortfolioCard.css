@@ -1,0 +1,47 @@
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height:100%;    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow:0px 8px 30px grey;
+    transition-duration: 1s;
+
+}
+.card:hover{
+    box-shadow:0px 8px 38px grey;
+    transition-duration: 1s
+}
+.card > * {
+    flex:auto;
+}
+.card h4{
+    margin:10px;
+}
+
+.card-body, .card-action{
+    text-align: center;
+    padding: 30px;
+}
+.card-body > p {
+    color:grey;
+    text-align:center;
+}
+.logo{
+    height:60%;
+}
+
+.logo img{
+    max-height:30vh;
+    width:auto;
+    height:auto;
+    box-shadow:0px 8px 38px grey;
+    position: relative;
+    top:-25px;
+}

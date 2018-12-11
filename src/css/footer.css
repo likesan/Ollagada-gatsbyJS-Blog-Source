@@ -1,0 +1,29 @@
+#footer {
+    text-align: center;
+    padding:15px;
+    position: relative;
+    bottom:0;
+    width:100%;
+}
+
+.social-connectors {
+    margin: auto;
+    width: 50%;
+}
+
+.social-connectors > a {
+    color: black;
+    margin: 5px;
+    font-size: 25px;
+    padding: 2px;
+    border-radius: 50px;
+    opacity:0.5;
+    transition-duration: 0.3;
+}
+
+
+.social-connectors > a:hover{
+    
+    transition-duration: 0.3;
+    opacity:1;
+}
